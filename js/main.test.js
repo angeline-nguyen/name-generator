@@ -10,7 +10,7 @@ test("Returns error if the first initial is not a letter, else returns uppercase
 });
 
 test("Birth months typed in with leading 0 are changed, others remain the same", () => {
-    expect(formatBirthMonth.format(01)).toBe(1);
+    expect(formatBirthMonth.format(0o1)).toBe(1);
     expect(formatBirthMonth.format(1)).toBe(1);
     expect(formatBirthMonth.format(11)).toBe(11);
 });
