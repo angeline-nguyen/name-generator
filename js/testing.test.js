@@ -1,5 +1,5 @@
-const validateFirstInitial = require("./main.js");
-const formatBirthMonth = require("./main.js");
+const validateFirstInitial = require("./testing.js");
+const formatBirthMonth = require("./testing.js");
 
 test("Returns error if the first initial is not a letter, else returns uppercase letter", () => {
     expect(validateFirstInitial.validate(" ")).toBe("First initial must be a letter");
